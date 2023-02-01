@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  php:
+    container_name: delivery-club-api-sdk-php
+    tty: true
+    restart: 'no'
+    build:
+      context: ./Php
+    volumes:
+      - ./../:/var/app:cached
